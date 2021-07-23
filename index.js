@@ -41,3 +41,15 @@ function successCB(JSONresult){
 }
 
 parseJSON('{"x:10}', successCB, failureCB)
+
+// Third 
+
+function delay(ms){
+  let promise = new Promise(function(resolve, reject){
+    setTimeout(()=>resolve('100'),ms)
+  })
+  return promise
+}
+delay(1000).then(value => console.log(`Done with ${value}`))
+
+
