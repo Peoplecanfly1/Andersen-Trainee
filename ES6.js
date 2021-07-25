@@ -29,3 +29,13 @@ let task6New = ()=>{
   return result 
 }
 console.log(task6New());
+
+
+// TASK 7 
+
+
+let task7New = ()=>{
+  return Object.assign({test:0}, {foo:1, bar:2})
+}
+
+console.log(task7New())
