@@ -117,3 +117,13 @@ function tasknew(obj, nameLevel1, nameLevel2){
   return obj ?.[nameLevel1] && obj[nameLevel1] ?.[nameLevel2]
 }
 
+// 13
+
+arr.flat()
+
+//14
+
+Object.entires(obj)
+
+//15
+
