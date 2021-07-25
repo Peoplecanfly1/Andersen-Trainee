@@ -39,3 +39,30 @@ let task7New = ()=>{
 }
 
 console.log(task7New())
+
+// TASK 8 
+
+function task8New() {
+  const obj = {
+    nums: [0, 2, 5, 10, 15],
+    fives: [], 
+    calculateNumsFive(){
+      this.fives = this.nums.filter(item => item % 5 === 0)
+      return this.fives
+    },
+  }
+  
+  return obj.calculateNumsFive()
+}
+
+console.log(task8New())
+
+
+// TASK 9
+
+function task9New() {
+ return ['test'.includes('est'), [22, 1, 90, 70].find(x => x<3)]
+
+}
+
+console.log(task9New())
