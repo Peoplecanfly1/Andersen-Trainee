@@ -111,3 +111,9 @@ function task11(obj, fieldName){
 console.log(task11({a: 1}, 'a')); 
 
 
+//task 12 
+
+function tasknew(obj, nameLevel1, nameLevel2){
+  return obj ?.[nameLevel1] && obj[nameLevel1] ?.[nameLevel2]
+}
+
