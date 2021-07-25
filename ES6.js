@@ -66,3 +66,48 @@ function task9New() {
 }
 
 console.log(task9New())
+
+// TASK 10 TO DO  setters getters
+class newA{ 
+  #color = null;
+  constructor(name){
+    this.name = name
+  }
+
+  getName(){
+    return this.name
+  }
+
+}
+
+class newB extends newA{
+   constructor(name, age){
+    super(name)
+    this.age = age
+    this.color = null
+  }
+
+  getName(text){
+    return `${this.name} ${text}`
+  }
+
+  defaultuser(){
+    return new newB('test', 0)
+  }
+
+  getAge(){
+    return this.age
+  }
+}
+
+let max = new newB('max', 13)
+
+
+//TASK 11
+function task11(obj, fieldName){
+  return obj[fieldName] || ( obj[fieldName] ?? false)
+}
+
+console.log(task11({a: 1}, 'a')); 
+
+
